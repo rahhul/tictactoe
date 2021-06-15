@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B7BA539D267843F4005E5A4E /* tictactoeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BA539C267843F4005E5A4E /* tictactoeApp.swift */; };
-		B7BA539F267843F4005E5A4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BA539E267843F4005E5A4E /* ContentView.swift */; };
+		B7BA539F267843F4005E5A4E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BA539E267843F4005E5A4E /* GameView.swift */; };
 		B7BA53A1267843F5005E5A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BA53A0267843F5005E5A4E /* Assets.xcassets */; };
 		B7BA53A4267843F5005E5A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BA53A3267843F5005E5A4E /* Preview Assets.xcassets */; };
 		B7BA53AC2678A7C7005E5A4E /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BA53AB2678A7C7005E5A4E /* Alerts.swift */; };
+		B7BA53AE2678E2AB005E5A4E /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BA53AD2678E2AB005E5A4E /* GameViewModel.swift */; };
+		B7BA53B02678E65A005E5A4E /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BA53AF2678E65A005E5A4E /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7BA5399267843F4005E5A4E /* tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BA539C267843F4005E5A4E /* tictactoeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoeApp.swift; sourceTree = "<group>"; };
-		B7BA539E267843F4005E5A4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7BA539E267843F4005E5A4E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		B7BA53A0267843F5005E5A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7BA53A3267843F5005E5A4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B7BA53A5267843F5005E5A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7BA53AB2678A7C7005E5A4E /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		B7BA53AD2678E2AB005E5A4E /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		B7BA53AF2678E65A005E5A4E /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				B7BA539C267843F4005E5A4E /* tictactoeApp.swift */,
-				B7BA539E267843F4005E5A4E /* ContentView.swift */,
+				B7BA539E267843F4005E5A4E /* GameView.swift */,
+				B7BA53AD2678E2AB005E5A4E /* GameViewModel.swift */,
 				B7BA53AB2678A7C7005E5A4E /* Alerts.swift */,
 				B7BA53A0267843F5005E5A4E /* Assets.xcassets */,
 				B7BA53A5267843F5005E5A4E /* Info.plist */,
 				B7BA53A2267843F5005E5A4E /* Preview Content */,
+				B7BA53AF2678E65A005E5A4E /* GameModel.swift */,
 			);
 			path = tictactoe;
 			sourceTree = "<group>";
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7BA539F267843F4005E5A4E /* ContentView.swift in Sources */,
+				B7BA53B02678E65A005E5A4E /* GameModel.swift in Sources */,
+				B7BA53AE2678E2AB005E5A4E /* GameViewModel.swift in Sources */,
+				B7BA539F267843F4005E5A4E /* GameView.swift in Sources */,
 				B7BA53AC2678A7C7005E5A4E /* Alerts.swift in Sources */,
 				B7BA539D267843F4005E5A4E /* tictactoeApp.swift in Sources */,
 			);
