@@ -61,11 +61,11 @@
 				B7BA539C267843F4005E5A4E /* tictactoeApp.swift */,
 				B7BA539E267843F4005E5A4E /* GameView.swift */,
 				B7BA53AD2678E2AB005E5A4E /* GameViewModel.swift */,
+				B7BA53AF2678E65A005E5A4E /* GameModel.swift */,
 				B7BA53AB2678A7C7005E5A4E /* Alerts.swift */,
 				B7BA53A0267843F5005E5A4E /* Assets.xcassets */,
 				B7BA53A5267843F5005E5A4E /* Info.plist */,
 				B7BA53A2267843F5005E5A4E /* Preview Content */,
-				B7BA53AF2678E65A005E5A4E /* GameModel.swift */,
 			);
 			path = tictactoe;
 			sourceTree = "<group>";

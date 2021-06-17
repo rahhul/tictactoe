@@ -11,7 +11,7 @@ import SwiftUI
 
 struct GameView: View {
     
-    @StateObject private var viewModel = GameViewModel()
+    @StateObject private var viewModel: GameViewModel = GameViewModel()
     
     
     var body: some View {
@@ -23,11 +23,12 @@ struct GameView: View {
                     ForEach(0..<9) { i in
                         ZStack {
                             GameSquareView(proxy: geometry)
-                            PlayerIndicator(systemImageName: viewModel.moves[i]?.indicator ?? "")
+                            PlayerIndicator(systemImageName: viewModel.moves[i]?.indicator ?? " ")
                         }
                         .onTapGesture {
                             viewModel.processPlayerMove(for: i)
                         }
+                        
                     }
                 }
                 Spacer()
@@ -54,7 +55,7 @@ struct GameSquareView: View {
     
     var body: some View {
         Circle()
-            .foregroundColor(Color(red: 0.3, green: 0.4, blue: 0.8))
+            .foregroundColor(Color(red: 0.35, green: 0.3, blue: 0.8))
             .frame(width: proxy.size.width/3 - 45,
                    height: proxy.size.width/3 - 45)
     }
@@ -71,7 +72,6 @@ struct PlayerIndicator: View {
             .frame(width: 100, height: 100).foregroundColor(.white)
     }
 }
-
 
 
 
